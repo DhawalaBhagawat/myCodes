@@ -1,0 +1,26 @@
+{
+	"metadata": {
+		"product": "SDS",
+		"version": "16.0.0.6"
+	},
+	"data": [
+		{
+			"sNo": "1",
+			"module": "SoftCount",
+			"classval": "SoftCountFacade",
+			"api": "getSoftcountReasons()",
+			"functionality": "Get all the adjustments for a count room in Transfer UI",
+			"result": "Passed",
+			"timestamp": "2017-06-23 09:27:26.604"
+		},
+		{
+			"sNo": "2",
+			"module": "SoftCount",
+			"classval": "SoftCountDAO",
+			"api": "getSignatureListForGamingDayCountRoom()",
+			"functionality": "Get all the adjustments for a count room in Transfer UI",
+			"result": "Passed",
+			"timestamp": "2017-06-23 09:27:26.687"
+		}
+	]
+}

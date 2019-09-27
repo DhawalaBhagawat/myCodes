@@ -1,0 +1,695 @@
+2017-07-05 19:00:17,706 INFO c.s.m.c.ConfigurationBuilder [main] Getting the configuration file conf.properties from the classpath
+2017-07-05 19:00:17,835 INFO c.s.m.u.ReportsUtil [main] Cleaning up D:\ZebraDemo\AlertGrid\Workspace\Reports folder
+2017-07-05 19:00:18,092 INFO c.s.m.u.ReportsUtil [main] Created reports folder structure as :: D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17 ; D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\json
+2017-07-05 19:00:18,098 INFO c.s.m.u.ApplicationServerUtil [main] For file: D:/Products/AlertGrid/wildfly-10.0\modules/system/layers/base/com/bally/config/main\db.propertiesdb.properties
+		Updated the properties is.developer.test to true and file.location to D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\json
+2017-07-05 19:00:18,405 INFO c.s.m.u.DatabaseUtil [main] Running DB backup query: BACKUP DATABASE AG_1 TO DISK = 'D:/ZebraDemo/AlertGrid/Workspace\AG_1.bak'
+2017-07-05 19:00:18,904 INFO c.s.m.t.r.UnitTestRunner [main] Starting Unit Test for AG
+2017-07-05 19:00:38,911 INFO c.s.m.t.r.UnitTestRunner [main] Unit Test for AG completed
+2017-07-05 19:00:38,915 INFO c.s.m.u.ApplicationServerUtil [main] For file: D:/Products/AlertGrid/wildfly-10.0\modules/system/layers/base/com/bally/config/main\db.propertiesdb.properties
+		Updated the properties is.developer.test to false
+2017-07-05 19:00:38,939 INFO c.s.m.u.ApplicationServerUtil [main] Moved file BAG.ear from D:/Products/AlertGrid/wildfly-10.0\standalone\deployments\BAG.ear to D:/ZebraDemo/AlertGrid/Workspace\\BAGEngine\bagear\BAG.ear
+2017-07-05 19:00:38,958 INFO c.s.m.u.DatabaseUtil [main] Running DB resotre query: ALTER DATABASE AG_1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE; RESTORE DATABASE AG_1 FROM DISK ='D:/ZebraDemo/AlertGrid/Workspace' WITH REPLACE; ALTER DATABASE AG_1 SET MULTI_USER;
+2017-07-05 19:00:50,015 INFO c.s.m.t.r.ZebraTestRunner [main] **************************** Maven log starts from here *******************************
+2017-07-05 19:00:50,060 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:00:50,060 INFO c.s.m.t.r.ZebraTestRunner [main] D:\Workspaces\Report\test-case-mapper>cd D:/ZebraDemo/AlertGrid/Workspace\BAGEngine 
+2017-07-05 19:00:50,061 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:00:50,061 INFO c.s.m.t.r.ZebraTestRunner [main] D:\ZebraDemo\AlertGrid\Workspace\BAGEngine>call RunZebraTest.bat 
+2017-07-05 19:00:50,062 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:00:50,062 INFO c.s.m.t.r.ZebraTestRunner [main] D:\ZebraDemo\AlertGrid\Workspace\BAGEngine>mvn clean install -Parq-wildfly-remote -Djava.net.preferIPv4Stack=true 
+2017-07-05 19:00:51,062 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Scanning for projects...
+2017-07-05 19:00:51,205 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:00:51,205 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] ------------------------------------------------------------------------
+2017-07-05 19:00:51,205 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Building Alert Grid 0.0.1-SNAPSHOT
+2017-07-05 19:00:51,206 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] ------------------------------------------------------------------------
+2017-07-05 19:00:51,879 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for org.apache.activemq:artemis-commons:jar:1.1.0.wildfly-017 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:51,884 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for org.apache.activemq:artemis-core-client:jar:1.1.0.wildfly-017 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:51,890 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for org.apache.activemq:artemis-hqclient-protocol:jar:1.1.0.wildfly-017 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:51,894 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for org.apache.activemq:artemis-jms-client:jar:1.1.0.wildfly-017 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:51,958 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for opensymphony:quartz-all:jar:1.6.0 is missing, no dependency information available
+2017-07-05 19:00:52,847 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for com.sun.xml.stream.buffer:streambuffer:jar:0.4 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:52,868 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] The POM for org.jvnet.staxex:stax-ex:jar:1.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-07-05 19:00:53,337 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:00:53,338 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ BAG ---
+2017-07-05 19:00:53,398 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Deleting D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target
+2017-07-05 19:00:54,057 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:00:54,057 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ BAG ---
+2017-07-05 19:00:56,222 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] argLine set to -javaagent:C:\\Users\\kkumar2\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.7.7.201606060606\\org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=D:\\ZebraDemo\\AlertGrid\\Workspace\\BAGEngine\\target\\jacoco.exec,excludes=**/*com/ballydev/bag/userMatrix/**/*:**/*com/ballydev/bag/connectionPool/**/*:**/*com/ballydev/bag/messageFormatter/**/*:**/*com/ballydev/bag/agent/**/*
+2017-07-05 19:00:56,222 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:00:56,222 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ BAG ---
+2017-07-05 19:00:56,355 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-05 19:00:56,356 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] skip non existing resourceDirectory D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\src\main\resources
+2017-07-05 19:00:56,356 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:00:56,356 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ BAG ---
+2017-07-05 19:00:56,607 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Changes detected - recompiling the module!
+2017-07-05 19:00:56,609 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+2017-07-05 19:00:56,617 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Compiling 226 source files to D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\classes
+2017-07-05 19:01:01,889 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] /D:/ZebraDemo/AlertGrid/Workspace/BAGEngine/src/main/java/com/ballydev/bag/receiver/listener/UDPListenerforUserAlerts.java:[32,48] com.sun.org.apache.bcel.internal.generic.INSTANCEOF is internal proprietary API and may be removed in a future release
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] /D:/ZebraDemo/AlertGrid/Workspace/BAGEngine/src/main/java/com/ballydev/bag/connectionPool/HttpClientPool.java: Some input files use or override a deprecated API.
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] /D:/ZebraDemo/AlertGrid/Workspace/BAGEngine/src/main/java/com/ballydev/bag/connectionPool/HttpClientPool.java: Recompile with -Xlint:deprecation for details.
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] /D:/ZebraDemo/AlertGrid/Workspace/BAGEngine/src/main/java/com/ballydev/bag/bo/BagBO.java: Some input files use unchecked or unsafe operations.
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] /D:/ZebraDemo/AlertGrid/Workspace/BAGEngine/src/main/java/com/ballydev/bag/bo/BagBO.java: Recompile with -Xlint:unchecked for details.
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:01:01,890 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ BAG ---
+2017-07-05 19:01:01,893 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-05 19:01:01,903 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Copying 111 resources
+2017-07-05 19:01:02,863 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:01:02,863 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ BAG ---
+2017-07-05 19:01:02,894 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Changes detected - recompiling the module!
+2017-07-05 19:01:02,894 INFO c.s.m.t.r.ZebraTestRunner [main] [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+2017-07-05 19:01:02,897 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Compiling 7 source files to D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\test-classes
+2017-07-05 19:01:04,113 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:01:04,113 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-surefire-plugin:2.20:test (default-test) @ BAG ---
+2017-07-05 19:01:04,664 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:01:04,665 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] -------------------------------------------------------
+2017-07-05 19:01:04,665 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO]  T E S T S
+2017-07-05 19:01:04,665 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] -------------------------------------------------------
+2017-07-05 19:01:06,001 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Running com.ballydev.bag.test.TestBAG_QA
+2017-07-05 19:02:57,100 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] Tests run: 197, Failures: 9, Errors: 0, Skipped: 176, Time elapsed: 110.952 s <<< FAILURE! - in com.ballydev.bag.test.TestBAG_QA
+2017-07-05 19:02:57,101 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] validateUserByLoginAndFingerprint(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.966 s  <<< FAILURE!
+2017-07-05 19:02:57,101 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: 1002
+2017-07-05 19:02:57,101 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.validateUserByLoginAndFingerprint(TestBAG_QA.java:4868)
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddSite(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.179 s  <<< FAILURE!
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.SITE.NUMBER.EXISTS
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddSite(TestBAG_QA.java:234)
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.SITE.NUMBER.EXISTS
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddSite(TestBAG_QA.java:234)
+2017-07-05 19:02:57,102 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddCategory(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.385 s  <<< FAILURE!
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: CATEGORY.NAME.EXISTS
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddCategory(TestBAG_QA.java:927)
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: CATEGORY.NAME.EXISTS
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddCategory(TestBAG_QA.java:927)
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddAlert(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.197 s  <<< FAILURE!
+2017-07-05 19:02:57,103 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: ALERT.NAME.EXISTS
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddAlert(TestBAG_QA.java:1621)
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: ALERT.NAME.EXISTS
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddAlert(TestBAG_QA.java:1621)
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddAlertGroup(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.228 s  <<< FAILURE!
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: GROUP.NAME.EXISTS
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddAlertGroup(TestBAG_QA.java:1875)
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: GROUP.NAME.EXISTS
+2017-07-05 19:02:57,104 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddAlertGroup(TestBAG_QA.java:1875)
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddJob(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.306 s  <<< FAILURE!
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: JOB.NAME.EXISTS
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddJob(TestBAG_QA.java:2299)
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: JOB.NAME.EXISTS
+2017-07-05 19:02:57,105 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddJob(TestBAG_QA.java:2299)
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddRole(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.522 s  <<< FAILURE!
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.USER.ROLE.NAME.ALREADY.EXISTS
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddRole(TestBAG_QA.java:2532)
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.USER.ROLE.NAME.ALREADY.EXISTS
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddRole(TestBAG_QA.java:2532)
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,106 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testaddShift(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.408 s  <<< FAILURE!
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: SHIFT.NAME.EXISTS
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddShift(TestBAG_QA.java:2909)
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: SHIFT.NAME.EXISTS
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testaddShift(TestBAG_QA.java:2909)
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] testinsertTemplate(com.ballydev.bag.test.TestBAG_QA)  Time elapsed: 0.33 s  <<< FAILURE!
+2017-07-05 19:02:57,107 INFO c.s.m.t.r.ZebraTestRunner [main] com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.TEMPLATE.NAME.EXISTS
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testinsertTemplate(TestBAG_QA.java:3087)
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.TEMPLATE.NAME.EXISTS
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testinsertTemplate(TestBAG_QA.java:3087)
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] Caused by: com.ballydev.bag.exception.BAGEngineServiceException: BAG.MSG.TEMPLATE.NAME.EXISTS
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] 	at com.ballydev.bag.test.TestBAG_QA.testinsertTemplate(TestBAG_QA.java:3087)
+2017-07-05 19:02:57,108 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,608 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:02:57,608 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Results:
+2017-07-05 19:02:57,608 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:02:57,609 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] Failures: 
+2017-07-05 19:02:57,609 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddAlert:1621 » BAGEngineService ALERT.NAME...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddAlertGroup:1875 » BAGEngineService GROUP...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddCategory:927 » BAGEngineService CATEGORY...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddJob:2299 » BAGEngineService JOB.NAME.EXI...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddRole:2532 » BAGEngineService BAG.MSG.USE...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddShift:2909 » BAGEngineService SHIFT.NAME...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testaddSite:234 » BAGEngineService BAG.MSG.SITE...
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->testinsertTemplate:3087 » BAGEngineService BAG....
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR]   TestBAG_QA>Arquillian.run:164->validateUserByLoginAndFingerprint:4868 » BAGEngineService
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] Tests run: 197, Failures: 9, Errors: 0, Skipped: 176
+2017-07-05 19:02:57,610 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] [ERROR] There are test failures.
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] 
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] Please refer to D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\surefire-reports for the individual test results.
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:02:57,875 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-war-plugin:2.5:war (default-war) @ BAG ---
+2017-07-05 19:03:00,821 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Packaging webapp
+2017-07-05 19:03:00,821 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Assembling webapp [BAG] in [D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\BAG-0.0.1-SNAPSHOT]
+2017-07-05 19:03:00,832 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Processing war project
+2017-07-05 19:03:19,921 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Webapp assembled in [19104 msecs]
+2017-07-05 19:03:20,116 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Building war: D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\BAG-0.0.1-SNAPSHOT.war
+2017-07-05 19:03:22,593 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:03:22,593 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (default-report) @ BAG ---
+2017-07-05 19:03:22,866 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Loading execution data file D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\jacoco.exec
+2017-07-05 19:03:23,301 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Analyzed bundle 'Alert Grid' with 241 classes
+2017-07-05 19:03:30,614 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] 
+2017-07-05 19:03:30,614 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] --- maven-install-plugin:2.4:install (default-install) @ BAG ---
+2017-07-05 19:03:31,040 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Installing D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\target\BAG-0.0.1-SNAPSHOT.war to C:\Users\kkumar2\.m2\repository\com\sg\ag\BAG\0.0.1-SNAPSHOT\BAG-0.0.1-SNAPSHOT.war
+2017-07-05 19:03:31,313 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Installing D:\ZebraDemo\AlertGrid\Workspace\BAGEngine\pom.xml to C:\Users\kkumar2\.m2\repository\com\sg\ag\BAG\0.0.1-SNAPSHOT\BAG-0.0.1-SNAPSHOT.pom
+2017-07-05 19:03:36,929 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] ------------------------------------------------------------------------
+2017-07-05 19:03:36,929 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] BUILD SUCCESS
+2017-07-05 19:03:36,929 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] ------------------------------------------------------------------------
+2017-07-05 19:03:36,930 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Total time: 02:45 min
+2017-07-05 19:03:36,930 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Finished at: 2017-07-05T19:03:36+05:30
+2017-07-05 19:03:37,160 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] Final Memory: 53M/594M
+2017-07-05 19:03:37,160 INFO c.s.m.t.r.ZebraTestRunner [main] [INFO] ------------------------------------------------------------------------
+2017-07-05 19:03:37,467 INFO c.s.m.t.r.ZebraTestRunner [main] **************************** Maven log ends from here *********************************
+2017-07-05 19:03:37,468 INFO c.s.m.t.r.ZebraTestRunner [main] Zebra test process completed with with exit code of : 0
+2017-07-05 19:03:38,078 INFO c.s.m.u.ApplicationServerUtil [main] Restored file BAG.ear from D:/ZebraDemo/AlertGrid/Workspace\BAGEngine\bagear\BAG.ear to D:/Products/AlertGrid/wildfly-10.0\standalone\deployments\BAG.ear
+2017-07-05 19:03:38,299 INFO c.s.m.u.DatabaseUtil [main] Running DB resotre query: ALTER DATABASE AG_1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE; RESTORE DATABASE AG_1 FROM DISK ='D:/ZebraDemo/AlertGrid/Workspace' WITH REPLACE; ALTER DATABASE AG_1 SET MULTI_USER;
+2017-07-05 19:03:42,333 INFO c.s.m.u.ReportsUtil [main] Reading coverage summary from D:/ZebraDemo/AlertGrid/Workspace\BAGEngine\target/site/jacoco\index.html
+2017-07-05 19:03:42,873 INFO c.s.m.u.ReportsUtil [main] Coverage summary json report created at :: D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\json\coverage.json
+2017-07-05 19:03:44,496 INFO c.s.m.u.ReportsUtil [main] Copied coverage report from D:/ZebraDemo/AlertGrid/Workspace\BAGEngine\target/site/jacoco to D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco
+2017-07-05 19:03:44,629 DEBUG c.s.m.l.ExcelProcesscer [main] Getting the excel file QATestCases_AG.xlsx form the classpath
+2017-07-05 19:03:52,433 INFO c.s.m.l.ExcelProcesscer [main] Processing data from the excel file QATestCases_AG.xlsx
+2017-07-05 19:03:56,213 INFO c.s.m.m.x.XMLMapperUnmarshaller [main] Trying to load the mapper.xml file from the classpath
+2017-07-05 19:03:56,214 INFO c.s.m.m.x.XMLMapperUnmarshaller [main] Successfully loaded mapper.xml file from classpath
+2017-07-05 19:03:56,577 INFO c.s.m.m.t.TestNGUnmarshaller [main] Trying to load testng-results.xml file from classpath
+2017-07-05 19:03:56,578 INFO c.s.m.m.t.TestNGUnmarshaller [main] Successfully loaded testng-results.xml file from classpath
+2017-07-05 19:03:58,050 INFO c.s.m.u.ReportsUtil [main] **************************** Copying reports from : D:\ZebraDemo\AlertGrid\Workspace\Reports to : \10.2.153.144\Shared *******************************
+2017-07-05 19:03:58,553 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\index.html
+2017-07-05 19:03:58,554 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-sessions.html
+2017-07-05 19:03:58,556 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco.csv
+2017-07-05 19:03:58,558 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco.xml
+2017-07-05 19:03:58,564 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.bo\BagBO.html
+2017-07-05 19:03:58,566 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.bo\BagBO.java.html
+2017-07-05 19:03:58,571 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.bo\index.html
+2017-07-05 19:03:58,573 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.bo\index.source.html
+2017-07-05 19:03:58,575 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\AGInfinispanTreeCache.html
+2017-07-05 19:03:58,576 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\AGInfinispanTreeCache.java.html
+2017-07-05 19:03:58,577 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\BagCache.html
+2017-07-05 19:03:58,578 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\BagCache.java.html
+2017-07-05 19:03:58,579 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\BagJvmCache.html
+2017-07-05 19:03:58,580 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\BagJvmCache.java.html
+2017-07-05 19:03:58,580 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\index.html
+2017-07-05 19:03:58,581 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.cache\index.source.html
+2017-07-05 19:03:58,583 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\IAppConstants.html
+2017-07-05 19:03:58,584 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\IAppConstants.java.html
+2017-07-05 19:03:58,584 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\index.html
+2017-07-05 19:03:58,586 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\index.source.html
+2017-07-05 19:03:58,589 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\PropertyFileConstants.html
+2017-07-05 19:03:58,590 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.constants\PropertyFileConstants.java.html
+2017-07-05 19:03:58,592 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertCategoryDAO.html
+2017-07-05 19:03:58,593 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertCategoryDAO.java.html
+2017-07-05 19:03:58,594 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertGroupDAO.html
+2017-07-05 19:03:58,595 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertGroupDAO.java.html
+2017-07-05 19:03:58,595 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertGroupDetailsDAO.html
+2017-07-05 19:03:58,596 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertGroupDetailsDAO.java.html
+2017-07-05 19:03:58,597 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertLogDAO.html
+2017-07-05 19:03:58,598 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertLogDAO.java.html
+2017-07-05 19:03:58,599 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertRawMessageDAO.html
+2017-07-05 19:03:58,600 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertRawMessageDAO.java.html
+2017-07-05 19:03:58,600 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertsMasterDAO.html
+2017-07-05 19:03:58,601 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AlertsMasterDAO.java.html
+2017-07-05 19:03:58,602 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AuditTrailDAO.html
+2017-07-05 19:03:58,606 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\AuditTrailDAO.java.html
+2017-07-05 19:03:58,606 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\FailedEmailDAO.html
+2017-07-05 19:03:58,607 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\FailedEmailDAO.java.html
+2017-07-05 19:03:58,607 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\FunctionDAO.html
+2017-07-05 19:03:58,609 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\FunctionDAO.java.html
+2017-07-05 19:03:58,609 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\GenericDAOImpl.html
+2017-07-05 19:03:58,610 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\GenericDAOImpl.java.html
+2017-07-05 19:03:58,610 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\index.html
+2017-07-05 19:03:58,611 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\index.source.html
+2017-07-05 19:03:58,612 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobDAO.html
+2017-07-05 19:03:58,612 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobDAO.java.html
+2017-07-05 19:03:58,613 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobDetailsDAO.html
+2017-07-05 19:03:58,614 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobDetailsDAO.java.html
+2017-07-05 19:03:58,615 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobHandlersDAO.html
+2017-07-05 19:03:58,615 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\JobHandlersDAO.java.html
+2017-07-05 19:03:58,616 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\NotificationTypeDAO.html
+2017-07-05 19:03:58,617 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\NotificationTypeDAO.java.html
+2017-07-05 19:03:58,617 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\PriorityDAO.html
+2017-07-05 19:03:58,618 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\PriorityDAO.java.html
+2017-07-05 19:03:58,618 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ProductDAO.html
+2017-07-05 19:03:58,620 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ProductDAO.java.html
+2017-07-05 19:03:58,620 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ReceivedAlertsLogHome.html
+2017-07-05 19:03:58,624 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ReceivedAlertsLogHome.java.html
+2017-07-05 19:03:58,625 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RecipientDAO.html
+2017-07-05 19:03:58,626 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RecipientDAO.java.html
+2017-07-05 19:03:58,626 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RecipientGroupDetailsDAO.html
+2017-07-05 19:03:58,627 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RecipientGroupDetailsDAO.java.html
+2017-07-05 19:03:58,627 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RegisteredAgentDAO.html
+2017-07-05 19:03:58,628 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RegisteredAgentDAO.java.html
+2017-07-05 19:03:58,628 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ResendAlertsSchedulerDAO.html
+2017-07-05 19:03:58,629 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ResendAlertsSchedulerDAO.java.html
+2017-07-05 19:03:58,630 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ResendAlertsSchedulerDetailsDAO.html
+2017-07-05 19:03:58,631 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ResendAlertsSchedulerDetailsDAO.java.html
+2017-07-05 19:03:58,631 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RoleDAO.html
+2017-07-05 19:03:58,632 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RoleDAO.java.html
+2017-07-05 19:03:58,632 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RoleFunctionDAO.html
+2017-07-05 19:03:58,633 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\RoleFunctionDAO.java.html
+2017-07-05 19:03:58,633 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ShiftsDAO.html
+2017-07-05 19:03:58,634 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\ShiftsDAO.java.html
+2017-07-05 19:03:58,635 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\SiteDAO.html
+2017-07-05 19:03:58,636 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\SiteDAO.java.html
+2017-07-05 19:03:58,636 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\TemplateDAO.html
+2017-07-05 19:03:58,637 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\TemplateDAO.java.html
+2017-07-05 19:03:58,637 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\TemplateTypeDAO.html
+2017-07-05 19:03:58,641 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\TemplateTypeDAO.java.html
+2017-07-05 19:03:58,642 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserDAO.html
+2017-07-05 19:03:58,642 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserDAO.java.html
+2017-07-05 19:03:58,643 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserLoginDAO.html
+2017-07-05 19:03:58,644 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserLoginDAO.java.html
+2017-07-05 19:03:58,644 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSearchFilterDAO.html
+2017-07-05 19:03:58,645 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSearchFilterDAO.java.html
+2017-07-05 19:03:58,646 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSearchFilterMappingDAO.html
+2017-07-05 19:03:58,646 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSearchFilterMappingDAO.java.html
+2017-07-05 19:03:58,647 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserShiftLoginDAO.html
+2017-07-05 19:03:58,647 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserShiftLoginDAO.java.html
+2017-07-05 19:03:58,648 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSiteRoleMappingDAO.html
+2017-07-05 19:03:58,649 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dao\UserSiteRoleMappingDAO.java.html
+2017-07-05 19:03:58,650 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.db.dialect\BALLYSQLServerDialect.html
+2017-07-05 19:03:58,651 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.db.dialect\BALLYSQLServerDialect.java.html
+2017-07-05 19:03:58,651 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.db.dialect\index.html
+2017-07-05 19:03:58,653 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.db.dialect\index.source.html
+2017-07-05 19:03:58,654 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertAcknowledgementDTO.html
+2017-07-05 19:03:58,654 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertAcknowledgementDTO.java.html
+2017-07-05 19:03:58,655 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertCategoryDTO.html
+2017-07-05 19:03:58,656 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertCategoryDTO.java.html
+2017-07-05 19:03:58,657 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDetailsDTO.html
+2017-07-05 19:03:58,657 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDetailsDTO.java.html
+2017-07-05 19:03:58,658 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDisplayDTO.html
+2017-07-05 19:03:58,658 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDisplayDTO.java.html
+2017-07-05 19:03:58,659 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDTO.html
+2017-07-05 19:03:58,659 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertDTO.java.html
+2017-07-05 19:03:58,660 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertErrorDTO.html
+2017-07-05 19:03:58,660 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertErrorDTO.java.html
+2017-07-05 19:03:58,661 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertGroupDTO.html
+2017-07-05 19:03:58,661 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertGroupDTO.java.html
+2017-07-05 19:03:58,662 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertRecipientDTO.html
+2017-07-05 19:03:58,662 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AlertRecipientDTO.java.html
+2017-07-05 19:03:58,663 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AuditTrailDTO.html
+2017-07-05 19:03:58,664 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AuditTrailDTO.java.html
+2017-07-05 19:03:58,665 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AuthenticationType.html
+2017-07-05 19:03:58,665 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\AuthenticationType.java.html
+2017-07-05 19:03:58,666 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\BagBaseDTO.html
+2017-07-05 19:03:58,666 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\BagBaseDTO.java.html
+2017-07-05 19:03:58,667 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\FunctionDTO.html
+2017-07-05 19:03:58,667 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\FunctionDTO.java.html
+2017-07-05 19:03:58,668 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\HandlersDTO.html
+2017-07-05 19:03:58,668 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\HandlersDTO.java.html
+2017-07-05 19:03:58,669 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\index.html
+2017-07-05 19:03:58,670 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\index.source.html
+2017-07-05 19:03:58,671 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\JobDTO.html
+2017-07-05 19:03:58,671 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\JobDTO.java.html
+2017-07-05 19:03:58,672 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\NotificationTypeDTO.html
+2017-07-05 19:03:58,672 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\NotificationTypeDTO.java.html
+2017-07-05 19:03:58,673 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\PriorityDTO.html
+2017-07-05 19:03:58,673 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\PriorityDTO.java.html
+2017-07-05 19:03:58,674 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ProductDTO.html
+2017-07-05 19:03:58,675 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ProductDTO.java.html
+2017-07-05 19:03:58,675 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientDetailsDTO.html
+2017-07-05 19:03:58,676 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientDetailsDTO.java.html
+2017-07-05 19:03:58,676 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientDTO.html
+2017-07-05 19:03:58,677 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientDTO.java.html
+2017-07-05 19:03:58,678 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientErrorDTO.html
+2017-07-05 19:03:58,678 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RecipientErrorDTO.java.html
+2017-07-05 19:03:58,679 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ResendAlertScheduleDTO.html
+2017-07-05 19:03:58,680 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ResendAlertScheduleDTO.java.html
+2017-07-05 19:03:58,681 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RoleDTO.html
+2017-07-05 19:03:58,681 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\RoleDTO.java.html
+2017-07-05 19:03:58,682 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ShiftDTO.html
+2017-07-05 19:03:58,682 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\ShiftDTO.java.html
+2017-07-05 19:03:58,683 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\SiteDTO.html
+2017-07-05 19:03:58,683 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\SiteDTO.java.html
+2017-07-05 19:03:58,684 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\TemplateDTO.html
+2017-07-05 19:03:58,684 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\TemplateDTO.java.html
+2017-07-05 19:03:58,685 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\TemplateTypeDTO.html
+2017-07-05 19:03:58,686 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\TemplateTypeDTO.java.html
+2017-07-05 19:03:58,687 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserDetailsDTO.html
+2017-07-05 19:03:58,687 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserDetailsDTO.java.html
+2017-07-05 19:03:58,688 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserDTO.html
+2017-07-05 19:03:58,688 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserDTO.java.html
+2017-07-05 19:03:58,689 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserLoginDTO.html
+2017-07-05 19:03:58,689 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserLoginDTO.java.html
+2017-07-05 19:03:58,690 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserSearchFilterCriteria.html
+2017-07-05 19:03:58,691 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserSearchFilterCriteria.java.html
+2017-07-05 19:03:58,691 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserSearchFilterDTO.html
+2017-07-05 19:03:58,692 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserSearchFilterDTO.java.html
+2017-07-05 19:03:58,692 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserShiftLoginDTO.html
+2017-07-05 19:03:58,693 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.dto\UserShiftLoginDTO.java.html
+2017-07-05 19:03:58,694 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.exception\BAGEngineServiceException.html
+2017-07-05 19:03:58,695 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.exception\BAGEngineServiceException.java.html
+2017-07-05 19:03:58,695 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.exception\index.html
+2017-07-05 19:03:58,696 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.exception\index.source.html
+2017-07-05 19:03:58,697 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.facade\BAGFacade.html
+2017-07-05 19:03:58,698 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.facade\BAGFacade.java.html
+2017-07-05 19:03:58,699 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.facade\index.html
+2017-07-05 19:03:58,699 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.facade\index.source.html
+2017-07-05 19:03:58,701 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\AbstractHandler.html
+2017-07-05 19:03:58,701 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\AbstractHandler.java.html
+2017-07-05 19:03:58,702 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\CentralAlertGridHandler.html
+2017-07-05 19:03:58,703 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\CentralAlertGridHandler.java.html
+2017-07-05 19:03:58,703 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\CustomMessageHandler.html
+2017-07-05 19:03:58,704 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\CustomMessageHandler.java.html
+2017-07-05 19:03:58,704 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\DeviceHandler.html
+2017-07-05 19:03:58,705 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\DeviceHandler.java.html
+2017-07-05 19:03:58,705 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\EmailHandler.html
+2017-07-05 19:03:58,706 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\EmailHandler.java.html
+2017-07-05 19:03:58,706 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\GenericWebServiceHandler.html
+2017-07-05 19:03:58,707 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\GenericWebServiceHandler.java.html
+2017-07-05 19:03:58,707 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\index.html
+2017-07-05 19:03:58,708 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\index.source.html
+2017-07-05 19:03:58,708 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\MediaInterfaceHandler.html
+2017-07-05 19:03:58,709 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\MediaInterfaceHandler.java.html
+2017-07-05 19:03:58,709 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\PSSPAlertGridHandler.html
+2017-07-05 19:03:58,710 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\PSSPAlertGridHandler.java.html
+2017-07-05 19:03:58,711 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\ReflectionHandler.html
+2017-07-05 19:03:58,711 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\ReflectionHandler.java.html
+2017-07-05 19:03:58,712 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\SISurveillanceDeviceHandler.html
+2017-07-05 19:03:58,712 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\SISurveillanceDeviceHandler.java.html
+2017-07-05 19:03:58,713 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\SMSHandler.html
+2017-07-05 19:03:58,714 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\SMSHandler.java.html
+2017-07-05 19:03:58,714 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\STMHandler.html
+2017-07-05 19:03:58,715 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers\STMHandler.java.html
+2017-07-05 19:03:58,716 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlerExecutor.html
+2017-07-05 19:03:58,721 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlerExecutor.java.html
+2017-07-05 19:03:58,722 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlersThreadGroup.html
+2017-07-05 19:03:58,727 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlersThreadGroup.java.html
+2017-07-05 19:03:58,727 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlerThreadFactory.html
+2017-07-05 19:03:58,728 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\HandlerThreadFactory.java.html
+2017-07-05 19:03:58,728 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\index.html
+2017-07-05 19:03:58,729 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlers.thread\index.source.html
+2017-07-05 19:03:58,730 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\DeviceMessageSocketSender$ReConnectThread.html
+2017-07-05 19:03:58,730 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\DeviceMessageSocketSender.html
+2017-07-05 19:03:58,731 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\DeviceMessageSocketSender.java.html
+2017-07-05 19:03:58,732 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\DynamicWSInvoker.html
+2017-07-05 19:03:58,732 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\DynamicWSInvoker.java.html
+2017-07-05 19:03:58,733 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\index.html
+2017-07-05 19:03:58,734 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\index.source.html
+2017-07-05 19:03:58,734 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\Mailer.html
+2017-07-05 19:03:58,735 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\Mailer.java.html
+2017-07-05 19:03:58,735 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\WebRequestPoster.html
+2017-07-05 19:03:58,736 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\WebRequestPoster.java.html
+2017-07-05 19:03:58,736 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\WSInfo.html
+2017-07-05 19:03:58,737 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.handlerUtil\WSInfo.java.html
+2017-07-05 19:03:58,738 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Alerts$Alert.html
+2017-07-05 19:03:58,739 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Alerts.html
+2017-07-05 19:03:58,739 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Mapping$Map$Email.html
+2017-07-05 19:03:58,740 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Mapping$Map$SMS.html
+2017-07-05 19:03:58,741 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Mapping$Map.html
+2017-07-05 19:03:58,741 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Mapping.html
+2017-07-05 19:03:58,742 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Recipients$Recipient.html
+2017-07-05 19:03:58,742 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration$Recipients.html
+2017-07-05 19:03:58,743 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration.html
+2017-07-05 19:03:58,743 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\AlertConfiguration.java.html
+2017-07-05 19:03:58,744 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Amount$Authorization$Employee.html
+2017-07-05 19:03:58,745 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Amount$Authorization.html
+2017-07-05 19:03:58,745 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Amount.html
+2017-07-05 19:03:58,746 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Asset.html
+2017-07-05 19:03:58,746 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Employee.html
+2017-07-05 19:03:58,747 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Params$Param.html
+2017-07-05 19:03:58,748 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Params.html
+2017-07-05 19:03:58,748 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Player.html
+2017-07-05 19:03:58,749 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data$Slips.html
+2017-07-05 19:03:58,749 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert$Data.html
+2017-07-05 19:03:58,750 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$Alert.html
+2017-07-05 19:03:58,750 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$CustomMessage$Email.html
+2017-07-05 19:03:58,751 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$CustomMessage$SMS.html
+2017-07-05 19:03:58,752 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage$CustomMessage.html
+2017-07-05 19:03:58,752 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage.html
+2017-07-05 19:03:58,753 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessage.java.html
+2017-07-05 19:03:58,789 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler$Endpoints$Endpoint$DefaultIPList.html
+2017-07-05 19:03:58,790 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler$Endpoints$Endpoint$Sites.html
+2017-07-05 19:03:58,790 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler$Endpoints$Endpoint.html
+2017-07-05 19:03:58,791 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler$Endpoints.html
+2017-07-05 19:03:58,792 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler$HandlerTypeDisplayName.html
+2017-07-05 19:03:58,792 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler$Handler.html
+2017-07-05 19:03:58,793 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler.html
+2017-07-05 19:03:58,793 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\BAGMessageHandler.java.html
+2017-07-05 19:03:58,794 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\index.html
+2017-07-05 19:03:58,794 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\index.source.html
+2017-07-05 19:03:58,795 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\MessageTemplate$Alert$Handler.html
+2017-07-05 19:03:58,796 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\MessageTemplate$Alert.html
+2017-07-05 19:03:58,797 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\MessageTemplate.html
+2017-07-05 19:03:58,797 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\MessageTemplate.java.html
+2017-07-05 19:03:58,798 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\ObjectFactory.html
+2017-07-05 19:03:58,799 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\ObjectFactory.java.html
+2017-07-05 19:03:58,799 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body$SendMessage$Message.html
+2017-07-05 19:03:58,800 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body$SendMessage$Options.html
+2017-07-05 19:03:58,800 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body$SendMessage$Recipient.html
+2017-07-05 19:03:58,801 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body$SendMessage.html
+2017-07-05 19:03:58,802 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body$Service.html
+2017-07-05 19:03:58,803 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Body.html
+2017-07-05 19:03:58,803 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Header$Authentication.html
+2017-07-05 19:03:58,804 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request$Header.html
+2017-07-05 19:03:58,805 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request.html
+2017-07-05 19:03:58,805 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbClasses\Request.java.html
+2017-07-05 19:03:58,807 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\index.html
+2017-07-05 19:03:58,807 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\index.source.html
+2017-07-05 19:03:58,808 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\JAXBContextFactory.html
+2017-07-05 19:03:58,809 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\JAXBContextFactory.java.html
+2017-07-05 19:03:58,809 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\XMLMessageValidationEventHandler.html
+2017-07-05 19:03:58,835 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\XMLMessageValidationEventHandler.java.html
+2017-07-05 19:03:58,835 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\XmlProducer.html
+2017-07-05 19:03:58,836 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.jaxbUtil\XmlProducer.java.html
+2017-07-05 19:03:58,837 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.logger\BAGLogger.html
+2017-07-05 19:03:58,838 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.logger\BAGLogger.java.html
+2017-07-05 19:03:58,838 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.logger\index.html
+2017-07-05 19:03:58,839 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.logger\index.source.html
+2017-07-05 19:03:58,840 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\AlertMessageProcessor.html
+2017-07-05 19:03:58,841 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\AlertMessageProcessor.java.html
+2017-07-05 19:03:58,841 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\CustomMessageProcessor.html
+2017-07-05 19:03:58,842 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\CustomMessageProcessor.java.html
+2017-07-05 19:03:58,843 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\index.html
+2017-07-05 19:03:58,844 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\index.source.html
+2017-07-05 19:03:58,844 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\MessageProcessor.html
+2017-07-05 19:03:58,845 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.messageProcessor\MessageProcessor.java.html
+2017-07-05 19:03:58,888 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertCategory.html
+2017-07-05 19:03:58,889 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertCategory.java.html
+2017-07-05 19:03:58,889 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertGroup.html
+2017-07-05 19:03:58,890 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertGroup.java.html
+2017-07-05 19:03:58,891 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertGroupDetails.html
+2017-07-05 19:03:58,892 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertGroupDetails.java.html
+2017-07-05 19:03:58,892 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertLog.html
+2017-07-05 19:03:58,893 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertLog.java.html
+2017-07-05 19:03:58,893 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertLogAcknowledgement.html
+2017-07-05 19:03:58,894 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertLogAcknowledgement.java.html
+2017-07-05 19:03:58,894 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertRawMessage.html
+2017-07-05 19:03:58,895 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertRawMessage.java.html
+2017-07-05 19:03:58,895 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Alerts.html
+2017-07-05 19:03:58,896 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Alerts.java.html
+2017-07-05 19:03:58,896 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertsMaster.html
+2017-07-05 19:03:58,897 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertsMaster.java.html
+2017-07-05 19:03:58,898 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertsQueue.html
+2017-07-05 19:03:58,899 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AlertsQueue.java.html
+2017-07-05 19:03:58,899 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AuditTrail.html
+2017-07-05 19:03:58,900 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\AuditTrail.java.html
+2017-07-05 19:03:58,900 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ErrorLog.html
+2017-07-05 19:03:58,901 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ErrorLog.java.html
+2017-07-05 19:03:58,901 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\FailedEmail.html
+2017-07-05 19:03:58,902 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\FailedEmail.java.html
+2017-07-05 19:03:58,902 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Function.html
+2017-07-05 19:03:58,903 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Function.java.html
+2017-07-05 19:03:58,904 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\index.html
+2017-07-05 19:03:58,905 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\index.source.html
+2017-07-05 19:03:58,905 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Job.html
+2017-07-05 19:03:58,911 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Job.java.html
+2017-07-05 19:03:58,912 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\JobDetails.html
+2017-07-05 19:03:58,912 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\JobDetails.java.html
+2017-07-05 19:03:58,913 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\JobHandlers.html
+2017-07-05 19:03:58,913 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\JobHandlers.java.html
+2017-07-05 19:03:58,914 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\NotificationType.html
+2017-07-05 19:03:58,914 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\NotificationType.java.html
+2017-07-05 19:03:58,915 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Priority.html
+2017-07-05 19:03:58,916 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Priority.java.html
+2017-07-05 19:03:58,916 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Product.html
+2017-07-05 19:03:58,917 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Product.java.html
+2017-07-05 19:03:58,917 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ReceivedAlertsLog.html
+2017-07-05 19:03:58,918 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ReceivedAlertsLog.java.html
+2017-07-05 19:03:58,919 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Recipient.html
+2017-07-05 19:03:58,919 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Recipient.java.html
+2017-07-05 19:03:58,920 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RecipientDetails.html
+2017-07-05 19:03:58,921 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RecipientDetails.java.html
+2017-07-05 19:03:58,922 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RecipientGroupDetails.html
+2017-07-05 19:03:58,923 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RecipientGroupDetails.java.html
+2017-07-05 19:03:58,923 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RegisteredAgent.html
+2017-07-05 19:03:58,924 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RegisteredAgent.java.html
+2017-07-05 19:03:58,924 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ResendAlertsScheduler.html
+2017-07-05 19:03:58,925 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ResendAlertsScheduler.java.html
+2017-07-05 19:03:58,926 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ResendAlertsSchedulerDetails.html
+2017-07-05 19:03:58,927 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\ResendAlertsSchedulerDetails.java.html
+2017-07-05 19:03:58,927 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Role.html
+2017-07-05 19:03:58,928 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Role.java.html
+2017-07-05 19:03:58,929 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RoleFunction.html
+2017-07-05 19:03:58,929 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\RoleFunction.java.html
+2017-07-05 19:03:58,930 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Shifts.html
+2017-07-05 19:03:58,930 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Shifts.java.html
+2017-07-05 19:03:58,931 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Site.html
+2017-07-05 19:03:58,931 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Site.java.html
+2017-07-05 19:03:58,932 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Template.html
+2017-07-05 19:03:58,933 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\Template.java.html
+2017-07-05 19:03:58,933 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\TemplateType.html
+2017-07-05 19:03:58,934 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\TemplateType.java.html
+2017-07-05 19:03:58,935 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\User.html
+2017-07-05 19:03:58,935 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\User.java.html
+2017-07-05 19:03:58,936 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserLogin.html
+2017-07-05 19:03:58,936 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserLogin.java.html
+2017-07-05 19:03:58,937 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSearchFilter.html
+2017-07-05 19:03:58,938 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSearchFilter.java.html
+2017-07-05 19:03:58,938 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSearchFilterMapping.html
+2017-07-05 19:03:58,939 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSearchFilterMapping.java.html
+2017-07-05 19:03:58,939 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserShiftLogin.html
+2017-07-05 19:03:58,940 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserShiftLogin.java.html
+2017-07-05 19:03:58,940 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSiteRoleMapping.html
+2017-07-05 19:03:58,941 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.model\UserSiteRoleMapping.java.html
+2017-07-05 19:03:58,942 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\AlertTopicParser.html
+2017-07-05 19:03:58,943 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\AlertTopicParser.java.html
+2017-07-05 19:03:58,944 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\index.html
+2017-07-05 19:03:58,946 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\index.source.html
+2017-07-05 19:03:58,947 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\XMLMessageParser.html
+2017-07-05 19:03:58,947 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.parser\XMLMessageParser.java.html
+2017-07-05 19:03:58,948 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\index.html
+2017-07-05 19:03:58,949 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\index.source.html
+2017-07-05 19:03:58,950 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\JMSTopicListener$InitializerThread.html
+2017-07-05 19:03:58,951 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\JMSTopicListener.html
+2017-07-05 19:03:58,952 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\JMSTopicListener.java.html
+2017-07-05 19:03:58,952 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\UDPListener.html
+2017-07-05 19:03:58,953 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\UDPListener.java.html
+2017-07-05 19:03:58,953 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\UDPListenerforUserAlerts.html
+2017-07-05 19:03:58,954 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.listener\UDPListenerforUserAlerts.java.html
+2017-07-05 19:03:58,955 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.webservice\BAGWebService.html
+2017-07-05 19:03:58,955 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.webservice\BAGWebService.java.html
+2017-07-05 19:03:58,956 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.webservice\index.html
+2017-07-05 19:03:58,957 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.receiver.webservice\index.source.html
+2017-07-05 19:03:58,958 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\AlertLogScheduler.html
+2017-07-05 19:03:58,959 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\AlertLogScheduler.java.html
+2017-07-05 19:03:58,959 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\BAGCommonAlertScheduler.html
+2017-07-05 19:03:58,961 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\BAGCommonAlertScheduler.java.html
+2017-07-05 19:03:58,961 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\BAGCommonSchedulerJob.html
+2017-07-05 19:03:58,962 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\BAGCommonSchedulerJob.java.html
+2017-07-05 19:03:58,962 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\EndUserSessionJob.html
+2017-07-05 19:03:58,963 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\EndUserSessionJob.java.html
+2017-07-05 19:03:58,963 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\FailedEmailCheckScheduler.html
+2017-07-05 19:03:58,964 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\FailedEmailCheckScheduler.java.html
+2017-07-05 19:03:58,965 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\index.html
+2017-07-05 19:03:58,965 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\index.source.html
+2017-07-05 19:03:58,966 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\LoadAlertLogFromAgentJob.html
+2017-07-05 19:03:58,966 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\LoadAlertLogFromAgentJob.java.html
+2017-07-05 19:03:58,967 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ProcessPersistedMessagesJob.html
+2017-07-05 19:03:58,967 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ProcessPersistedMessagesJob.java.html
+2017-07-05 19:03:58,968 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\RegisterAgentScheduler.html
+2017-07-05 19:03:58,972 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\RegisterAgentScheduler.java.html
+2017-07-05 19:03:58,972 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendAlertsProcessingJob.html
+2017-07-05 19:03:58,973 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendAlertsProcessingJob.java.html
+2017-07-05 19:03:58,974 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendFailedCentralAlertsScheduler.html
+2017-07-05 19:03:58,974 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendFailedCentralAlertsScheduler.java.html
+2017-07-05 19:03:58,975 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendFailedSPAlertsScheduler.html
+2017-07-05 19:03:58,975 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\ResendFailedSPAlertsScheduler.java.html
+2017-07-05 19:03:58,976 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\UserAlertsProcessingJob.html
+2017-07-05 19:03:58,977 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.schedulers\UserAlertsProcessingJob.java.html
+2017-07-05 19:03:58,978 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\index.html
+2017-07-05 19:03:58,979 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\index.source.html
+2017-07-05 19:03:58,979 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\InitServlet$MyShutdownServlet.html
+2017-07-05 19:03:58,992 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\InitServlet.html
+2017-07-05 19:03:58,992 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\InitServlet.java.html
+2017-07-05 19:03:58,993 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\SMSDummyServlet.html
+2017-07-05 19:03:58,994 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.servlet\SMSDummyServlet.java.html
+2017-07-05 19:03:58,995 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\AbstractQueuedScheduler.html
+2017-07-05 19:03:58,995 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\AbstractQueuedScheduler.java.html
+2017-07-05 19:03:58,996 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThread.html
+2017-07-05 19:03:58,997 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThread.java.html
+2017-07-05 19:03:58,998 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThreadFactory.html
+2017-07-05 19:03:58,998 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThreadFactory.java.html
+2017-07-05 19:03:58,999 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThreadGroup.html
+2017-07-05 19:03:59,000 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\BAGThreadGroup.java.html
+2017-07-05 19:03:59,000 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\index.html
+2017-07-05 19:03:59,001 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\index.source.html
+2017-07-05 19:03:59,001 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessagePoolExecutor.html
+2017-07-05 19:03:59,002 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessagePoolExecutor.java.html
+2017-07-05 19:03:59,002 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessageQueuedScheduler.html
+2017-07-05 19:03:59,003 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessageQueuedScheduler.java.html
+2017-07-05 19:03:59,003 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessageThread.html
+2017-07-05 19:03:59,004 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.thread\MessageThread.java.html
+2017-07-05 19:03:59,005 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\DatagramProvider.html
+2017-07-05 19:03:59,006 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\DatagramProvider.java.html
+2017-07-05 19:03:59,006 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\index.html
+2017-07-05 19:03:59,007 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\index.source.html
+2017-07-05 19:03:59,008 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketClient$ReConnectThread.html
+2017-07-05 19:03:59,008 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketClient.html
+2017-07-05 19:03:59,009 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketClient.java.html
+2017-07-05 19:03:59,010 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketHandler.html
+2017-07-05 19:03:59,010 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketHandler.java.html
+2017-07-05 19:03:59,011 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketServer.html
+2017-07-05 19:03:59,011 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.transmitter\SocketServer.java.html
+2017-07-05 19:03:59,012 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\AsynchronousInsertJob.html
+2017-07-05 19:03:59,013 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\AsynchronousInsertJob.java.html
+2017-07-05 19:03:59,014 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BagCacheUtil.html
+2017-07-05 19:03:59,014 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BagCacheUtil.java.html
+2017-07-05 19:03:59,015 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BagEngineUtil.html
+2017-07-05 19:03:59,016 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BagEngineUtil.java.html
+2017-07-05 19:03:59,016 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BAGMasterObject.html
+2017-07-05 19:03:59,017 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\BAGMasterObject.java.html
+2017-07-05 19:03:59,017 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\ClusterUtil.html
+2017-07-05 19:03:59,018 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\ClusterUtil.java.html
+2017-07-05 19:03:59,018 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DateHelperUtil.html
+2017-07-05 19:03:59,019 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DateHelperUtil.java.html
+2017-07-05 19:03:59,019 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DecodeUtil.html
+2017-07-05 19:03:59,020 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DecodeUtil.java.html
+2017-07-05 19:03:59,020 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DTOConversionUtil.html
+2017-07-05 19:03:59,021 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\DTOConversionUtil.java.html
+2017-07-05 19:03:59,021 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\EJBServiceLocatorUtil.html
+2017-07-05 19:03:59,024 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\EJBServiceLocatorUtil.java.html
+2017-07-05 19:03:59,025 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\EncryptUtil.html
+2017-07-05 19:03:59,025 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\EncryptUtil.java.html
+2017-07-05 19:03:59,026 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\GenericTemplateUtil$LoadTemplate.html
+2017-07-05 19:03:59,026 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\GenericTemplateUtil.html
+2017-07-05 19:03:59,027 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\GenericTemplateUtil.java.html
+2017-07-05 19:03:59,027 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\index.html
+2017-07-05 19:03:59,028 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\index.source.html
+2017-07-05 19:03:59,028 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\JMSSender$InitializerThread.html
+2017-07-05 19:03:59,029 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\JMSSender.html
+2017-07-05 19:03:59,030 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\JMSSender.java.html
+2017-07-05 19:03:59,030 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\SequenceNumberGenerator.html
+2017-07-05 19:03:59,031 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\SequenceNumberGenerator.java.html
+2017-07-05 19:03:59,031 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\Util.html
+2017-07-05 19:03:59,032 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.bag.util\Util.java.html
+2017-07-05 19:03:59,033 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\AppPropertiesReader.html
+2017-07-05 19:03:59,034 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\AppPropertiesReader.java.html
+2017-07-05 19:03:59,034 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\HibernateUtil.html
+2017-07-05 19:03:59,035 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\HibernateUtil.java.html
+2017-07-05 19:03:59,036 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\index.html
+2017-07-05 19:03:59,036 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\index.source.html
+2017-07-05 19:03:59,037 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\PropertiesReaderUtil.html
+2017-07-05 19:03:59,037 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\PropertiesReaderUtil.java.html
+2017-07-05 19:03:59,038 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\UnanckowledgedCount.html
+2017-07-05 19:03:59,038 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util\UnanckowledgedCount.java.html
+2017-07-05 19:03:59,039 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util.filemonitor\FileMonitor$FileMonitorTask.html
+2017-07-05 19:03:59,040 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util.filemonitor\FileMonitor.html
+2017-07-05 19:03:59,041 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util.filemonitor\FileMonitor.java.html
+2017-07-05 19:03:59,042 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util.filemonitor\index.html
+2017-07-05 19:03:59,042 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\com.ballydev.common.util.filemonitor\index.source.html
+2017-07-05 19:03:59,043 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\branchfc.gif
+2017-07-05 19:03:59,044 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\branchnc.gif
+2017-07-05 19:03:59,044 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\branchpc.gif
+2017-07-05 19:03:59,045 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\bundle.gif
+2017-07-05 19:03:59,045 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\class.gif
+2017-07-05 19:03:59,046 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\down.gif
+2017-07-05 19:03:59,047 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\greenbar.gif
+2017-07-05 19:03:59,047 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\group.gif
+2017-07-05 19:03:59,048 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\method.gif
+2017-07-05 19:03:59,049 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\package.gif
+2017-07-05 19:03:59,049 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\prettify.css
+2017-07-05 19:03:59,050 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\prettify.js
+2017-07-05 19:03:59,050 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\redbar.gif
+2017-07-05 19:03:59,051 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\report.css
+2017-07-05 19:03:59,051 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\report.gif
+2017-07-05 19:03:59,052 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\session.gif
+2017-07-05 19:03:59,052 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\sort.gif
+2017-07-05 19:03:59,053 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\sort.js
+2017-07-05 19:03:59,053 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\source.gif
+2017-07-05 19:03:59,054 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\jacoco\jacoco-resources\up.gif
+2017-07-05 19:03:59,056 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\json\coverage.json
+2017-07-05 19:03:59,056 INFO c.s.m.u.ReportsUtil [main] D:\ZebraDemo\AlertGrid\Workspace\Reports\2017-07-05_19.00.17\json\functional_test_result.json
+2017-07-05 19:03:59,159 INFO c.s.m.u.ReportsUtil [main] 515 File(s) copied
+2017-07-05 19:03:59,161 INFO c.s.m.u.ReportsUtil [main] **************************** File copy completed *********************************
